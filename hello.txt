@@ -1,0 +1,6 @@
+DB_CONNECTION_STRING =mongodb+srv://admin:I9T8bDa8Ze8VjjOo@cluster0.z41wpek.mongodb.net/?retryWrites=true&w=majority
+PORT =5000
+REFRESH_TOKEN_SECRET =4e920cb5-3ac6-4d14-85cc-c2faa476d5df
+ACCESS_TOKEN_SECRET =fd695a66-3d0d-416d-a598-082876cd41c6
+NODEMAILER_USER =habeebrh321@gmail.com
+NODEMAILER_PASS =bpjalsftcgjqkauj
