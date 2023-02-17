@@ -87,7 +87,8 @@ exports.forgotPassword = async (req, res) => {
         const { email, password } = req.body;
         if (!email || !password) return res.status(400).json({ message: 'all fields required' })
         const user = await userModel.findOne({ email: email })
-        user.password = password
+        const hash = await bcrypt.hash(password, 10)
+        user.password = hash
         await user.save()
         res.status(202).json({ message: "password updated" })
     } catch (error) {
